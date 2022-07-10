@@ -33,6 +33,3 @@ while x > 1:
     display.flush()
     utime.sleep(0.02)
     x -= 1
-
-utime.sleep(10)
-system.home()
