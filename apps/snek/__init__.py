@@ -1,6 +1,7 @@
 import display
 import buttons
 import mascot
+import system
 
 
 def home_press(pressed):
