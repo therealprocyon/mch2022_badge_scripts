@@ -1,12 +1,20 @@
 import display
 import buttons
 import mascot
+import system
 
 display.drawFill(0x000000)
 display.drawText(10,10,"Hack The Planet!!!", display.GREEN, "roboto_regular18")
 display.flush()
 
 while True:
+    
+    def home_press(pressed):
+        if pressed:
+            system.home()
+            
+    buttons.attach(buttons.BTN_HOME, home_press)
+    
     def on_action_btn(pressed):
         if pressed:
             display.drawFill(display.BLACK)
@@ -22,7 +30,6 @@ while True:
             display.flush()
     buttons.attach(buttons.BTN_A, on_action)
     buttons.detach(buttons.BTN_A)
+    
 
-
-
-        
+           
