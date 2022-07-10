@@ -1,5 +1,5 @@
 import display
-
+import system
 
 #added a feature to show triangle being drawn with time.sleep(0.06)
 display.drawFill(0x000000)
@@ -26,4 +26,5 @@ while x > 1:
     time.sleep(0.06)
     x -= 1
    
-
+time.sleep(3)
+system.home()
